@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" />
+    <script src="app.js"></script>
+    <title>JavaScript</title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">Grāmata</h1>
+          <p>grāmatas priekš neatīstītiem cilvēkiem</p>
+          <form id="search-books">
+            <input type="text" placeholder="Meklēt grāmatu..." />
+          </form>
+	    	</div>
+	    </header>
+	    <div id="book-list">
+	    	<h2 class="title">Lasāmās grāmatas</h2>
+	    	<ul>
+	    		<li>
+	    			<span class="name">Vēja vārds</span>
+	    			<span class="delete">Izdzēst</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Gudrā cilvēka bailes</span>
+	    			<span class="delete">Izdzēst</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Kafka krastā</span>
+	    			<span class="delete">Izdzēst</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Meistars un Margarita</span>
+	    			<span class="delete">Izdzēst</span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <form id="add-book">
+        <input type="checkbox" id="hide" />
+        <label for="hide">Paslēpt visas grāmatas</label>
+	    	<input type="text" placeholder="Pievienot grāmatu..." />
+	    	<button>Pievienot</button>
+	    </form>
+      <div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">Par</li>
+          <li data-target="#contact">Kontakts</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>Aptuveni cilnes saturs ...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Kas tagad rotā ieejas vārtu podu Zen. Uz ieleju priekšā.</p>
+        </div>
+        <div class="panel" id="contact">
+          <p>Cilnes Kontakts saturs ...</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Kas tagad rotā ieejas vārtu podu Zen. Uz ieleju priekšā.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
